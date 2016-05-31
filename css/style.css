@@ -1,0 +1,415 @@
+/*css样式重置*/
+html,head,body,div,dl,dt,dd,ul,li,p,span,a,img,i,em{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #3c3c3c;
+}
+img{
+	border: 0 none;
+	vertical-align: baseline;
+}
+.clearfix{
+	*zoom:.;
+}
+.clearfix:after{
+	content: ".";
+	clear: both;
+	overflow: hidden;
+	display: block;
+	height: 0;
+	font-size: 0;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+.juzhong{
+	background: url(../images/background.jpg) no-repeat top #e9e9e9;
+	margin: 0 auto;
+	width: 100%;
+}
+#title{
+	margin: 0 auto;
+	width: 990px;
+	height: 569px;
+	text-indent: -99em;
+}
+#specialChiose{
+	background: #e9e9e9;
+	width: 100%;
+
+}
+.specialChiose{
+	margin: 0 auto;
+	width: 990px;
+	padding: 56px 0 87px;
+}
+.specialChiose dt{
+	background: url(../images/specialChiose.jpg);
+	margin: 0 auto 36px;
+	width: 500px;
+	height: 69px;
+	text-indent: -99em;
+}
+.specialChiose dd{
+	position: relative;
+	background: #fff;
+	margin-bottom: 16px;
+	width: 488px;
+	height: 255px;
+}
+.specialChiose img{
+	float: left;
+}
+.specialChiose .ticket{
+	display: block;
+	background: url(../images/sprite.png) no-repeat;
+	margin-top: 17px;
+	padding: 0 19px 0 9px;
+	width: 65px;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+}
+.specialChiose .introduce{
+	margin-top: 5px;
+	width: 208px;
+}
+.specialChiose .introduce > span{
+	margin-left: -9px;
+}
+.specialChiose .introduce span{
+	display: block;
+	height: 26px;
+	line-height: 26px;
+	font-size: 16px;
+}
+.specialChiose .introduce div{
+	background: url(../images/introduceBg.jpg) bottom no-repeat;
+	border-top: #444 2px dotted;
+	padding: 6px 76px 6px 5px;
+}
+.specialChiose .introduce i{
+	border: #8a8a8a 1px solid;
+	font-style: normal;
+	padding: 0 8px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+}
+.specialChiose .price{
+	margin-top: 18px;
+	line-height: 27px;
+}
+.specialChiose .price span{
+	color: #676767;
+}
+.specialChiose .price p{
+	margin-top: -7px;
+	font-size: 20px;
+	color: #fb193f;
+}
+.specialChiose .price i{
+	font-size: 27px;
+	font-style: normal;
+}
+.specialChiose .sell{
+	background: #e3e3e3;
+	text-align: center;
+	height: 25px;
+	line-height: 25px;
+}
+.specialChiose .buy{
+	display: block;
+	background: url(../images/sprite.png) 0 -20px no-repeat;
+	text-align: center;
+	height: 34px;
+	line-height: 34px;
+	font-size: 16px;
+	color: #fff;
+}
+.ad{
+	background: url(../images/advertisement.jpg);
+	margin-top: 3px;
+	height: 90px;
+	text-indent: -99em;
+}
+.specialChiose .recommend{
+	position: absolute;
+	background: url(../images/sprite.png) 0 -153px no-repeat;
+	width: 41px;
+	height: 41px;
+	text-indent: -99em;
+	top: 0;
+	left: 0;
+}
+.main{
+	margin-right: -16px;
+}
+.main dt{
+	margin: 0 auto 30px;
+	height: 71px;
+	text-indent: -99em;
+}
+.main dd{
+	position: relative;
+	margin-right: 16px;
+	width: 235px;
+}
+.main dd p{
+	background: #ff526e;
+	margin-top: -4px;
+	text-align: center;
+	height: 31px;
+	line-height: 31px;
+	color: #fff;
+}
+.main dd .mainbottom{
+	background: #fff;
+	height: 89px;
+}
+.main dd .introduce{
+	border-bottom: #c1c1c1 1px dashed;
+	padding: 0 35px 0 8px;
+	height: 24px;
+	line-height: 24px;
+	color: #707070;
+}
+.main dd .price{
+	height: 35px;
+}
+.main dd .price i{
+	margin: 12px 0 0 6px;
+	text-align: center;
+	width: 80px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 13px;
+	color: #6b6b6b;
+	font-style: normal;
+	text-decoration: line-through;
+}
+.main dd .price em{
+	margin: 9px 0 0 8px;
+	width: 60px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #ff153b;
+	font-style: normal;
+}
+.main dd .price span{
+	margin: 4px 0 0 -1px;
+	width: 74px;
+	height: 26px;
+	line-height: 26px;
+	font-size: 22px;
+	color: #ff153b;
+	font-weight: bold;
+}
+.main dd .ticket{
+	height: 29px;
+	font-size: 14px;
+}
+.main dd .ticket i{
+	border: #984e66 1px dashed;
+	border-right: #984e66 1px dotted;
+	text-align: center;
+	width: 27px;
+	height: 27px;
+	line-height: 27px;
+	color: #ff153b;
+	font-style: normal;
+}
+.main dd .ticket em{
+	border: #984e66 1px dashed;
+	border-left: 0 none;
+	text-align: center;
+	width: 89px;
+	height: 27px;
+	line-height: 27px;
+	color: #ff153b;
+	font-style: normal;
+}
+.main dd .ticket span{
+	background: url(../images/sprite.png) 0 -54px no-repeat;
+	padding: 0 42px 0 18px;
+	width: 56px;
+	height: 29px;
+	line-height: 29px;
+	color: #fff;
+}
+#farm{
+	background: #8e49ec;
+	width: 100%;
+}
+.farm{
+	margin: 0 auto;
+	padding: 62px 0 63px 0;
+	width: 990px;
+}
+.farm .main dt{
+	background: url(../images/fram.jpg) no-repeat;
+	width: 481px;
+}
+.farm .recommend{
+	position: absolute;
+	background: url(../images/sprite.png) no-repeat -41px -153px;
+	height: 41px;
+	width: 41px;
+	top: 0;
+	left: 0;
+	text-indent: -99em;
+}
+.farm .ad{
+	margin-top: 18px;
+}
+#clear{
+	background: #ffe00d;
+	width: 100%;
+}
+.clear{
+	margin: 0 auto;
+	padding: 60px 0 59px 0;
+	width: 990px;
+}
+.clear .main dt{
+	background: url(../images/clear.jpg) no-repeat;
+	width: 376px;
+}
+.clear .recommend,.babystore .recommend,.food .recommend{
+	position: absolute;
+	background: url(../images/sprite.png) no-repeat 0 -194px;
+	text-align: center;
+	height: 62px;
+	line-height: 62px;
+	width: 81px;
+	top: 0;
+	left: 0;
+	color: #fff;
+	font-style: normal;
+}
+#babystore{
+	background: #00d0ab;
+	width: 100%;
+}
+.babystore{
+	margin: 0 auto;
+	padding: 58px 0 72px 0;
+	width: 990px;
+}
+.babystore .main dt{
+	background: url(../images/babystore.jpg) no-repeat;
+	width: 371px;
+}
+#babytoy{
+	background: #fe416d;
+	width: 100%;
+}
+.babytoy{
+	margin: 0 auto;
+	padding: 70px 0 91px 0;
+	width: 990px;
+}
+.babytoy .main dt{
+	background: url(../images/babytoy.jpg) no-repeat;
+	width: 370px;
+}
+.babytoy dd .mainbottom{
+	margin-top: -4px;
+	height: 115px;
+}
+.babytoy dd .logo{
+	display: block;
+	background: url(../images/sprite.png) no-repeat 0 -254px;
+	margin: 0 auto;
+	padding-top: 1px;
+	width: 90px;
+	height: 45px;
+}
+.babytoy dd .storeInf{
+	display: block;
+	margin-bottom: 3px;
+	text-align: center;
+	height: 24px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #000;
+}
+.babytoy dd .ticket i{
+	background: url(../images/sprite.png) no-repeat 0 -83px;
+	margin-left: 9px;
+	border: 0 none;
+	text-align: center;
+	width: 109px;
+	line-height: 35px;
+	height: 35px;
+}
+.babytoy dd .ticket em{
+	background: url(../images/sprite.png) no-repeat 0px -118px;
+	border: 0 none;
+	padding-left: 22px;
+	text-align: inherit;
+	width: 89px;
+	line-height: 35px;
+	height: 35px;
+	color: #fff;
+}
+#food{
+	background: #ff6434;
+	width: 100%;
+}
+.food{
+	margin: 0 auto;
+	padding: 59px 0 131px 0;
+	width: 990px;
+}
+.food .main dt{
+	background: url(../images/food.jpg) no-repeat;
+	width: 371px;
+}
+#rightNav{
+	background:#fff;
+	position: fixed;
+	width: 90px;
+	top: 150px;
+	right: 0px;
+}
+#rightNav i{
+	display: block;
+	background: url(../images/sprite.png) no-repeat 0 -347px;
+	width: 90px;
+	height: 69px;
+}
+	
+#rightNav .href{
+	display: block;
+	background: url(../images/sprite.png) no-repeat -39px -301px;
+	margin: 0 auto;
+	border-bottom: #989898 1px dashed;
+	padding:4px 0 0 12px;
+	width: 52px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 13px;
+}
+#rightNav .goTop{
+	display: block;
+	background: url(../images/sprite.png) no-repeat 0 -301px;
+	margin: 0 auto;
+	text-indent: 99em;
+	width: 39px;
+	height: 46px;
+}
