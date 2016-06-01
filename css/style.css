@@ -32,19 +32,10 @@ img{
 	float: right;
 }
 body{
+	background: url(../images/background.jpg) no-repeat top #e9e9e9;
+	padding-top: 569px;
 	font-family: "微软雅黑";
 	font-size: 14px;
-}
-.juzhong{
-	background: url(../images/background.jpg) no-repeat top #e9e9e9;
-	margin: 0 auto;
-	width: 100%;
-}
-#title{
-	margin: 0 auto;
-	width: 990px;
-	height: 569px;
-	text-indent: -99em;
 }
 #specialChiose{
 	background: #e9e9e9;
@@ -56,17 +47,21 @@ body{
 	width: 990px;
 	padding: 56px 0 87px;
 }
-.specialChiose dt{
+.specialChiose .title{
 	background: url(../images/specialChiose.jpg);
 	margin: 0 auto 36px;
 	width: 500px;
 	height: 69px;
 	text-indent: -99em;
 }
-.specialChiose dd{
+.specialChiose ul{
+	margin-right: -14px;
+	overflow: hidden;
+}
+.specialChiose li{
 	position: relative;
 	background: #fff;
-	margin-bottom: 16px;
+	margin: 0 14px 16px 0;
 	width: 488px;
 	height: 255px;
 }
@@ -135,16 +130,16 @@ body{
 	display: block;
 	background: url(../images/sprite.png) 0 -20px no-repeat;
 	text-align: center;
+	width: 208px;
 	height: 34px;
 	line-height: 34px;
 	font-size: 16px;
 	color: #fff;
 }
 .ad{
-	background: url(../images/advertisement.jpg);
+	display: block;
 	margin-top: 3px;
 	height: 90px;
-	text-indent: -99em;
 }
 .specialChiose .recommend{
 	position: absolute;
@@ -157,18 +152,19 @@ body{
 }
 .main{
 	margin-right: -16px;
+	overflow: hidden;
 }
-.main dt{
+.title{
 	margin: 0 auto 30px;
 	height: 71px;
 	text-indent: -99em;
 }
-.main dd{
+.main li{
 	position: relative;
 	margin-right: 16px;
 	width: 235px;
 }
-.main dd p{
+.main li p{
 	background: #ff526e;
 	margin-top: -4px;
 	text-align: center;
@@ -176,21 +172,21 @@ body{
 	line-height: 31px;
 	color: #fff;
 }
-.main dd .mainbottom{
+.main li .mainbottom{
 	background: #fff;
 	height: 89px;
 }
-.main dd .introduce{
+.main li .introduce{
 	border-bottom: #c1c1c1 1px dashed;
 	padding: 0 35px 0 8px;
 	height: 24px;
 	line-height: 24px;
 	color: #707070;
 }
-.main dd .price{
+.main li .price{
 	height: 35px;
 }
-.main dd .price i{
+.main li .price i{
 	margin: 12px 0 0 6px;
 	text-align: center;
 	width: 80px;
@@ -201,7 +197,7 @@ body{
 	font-style: normal;
 	text-decoration: line-through;
 }
-.main dd .price em{
+.main li .price em{
 	margin: 9px 0 0 8px;
 	width: 60px;
 	height: 20px;
@@ -210,7 +206,7 @@ body{
 	color: #ff153b;
 	font-style: normal;
 }
-.main dd .price span{
+.main li .price span{
 	margin: 4px 0 0 -1px;
 	width: 74px;
 	height: 26px;
@@ -219,11 +215,12 @@ body{
 	color: #ff153b;
 	font-weight: bold;
 }
-.main dd .ticket{
+.main li .ticket{
+	display: block;
 	height: 29px;
 	font-size: 14px;
 }
-.main dd .ticket i{
+.main li .ticket i{
 	border: #984e66 1px dashed;
 	border-right: #984e66 1px dotted;
 	text-align: center;
@@ -233,7 +230,7 @@ body{
 	color: #ff153b;
 	font-style: normal;
 }
-.main dd .ticket em{
+.main li .ticket em{
 	border: #984e66 1px dashed;
 	border-left: 0 none;
 	text-align: center;
@@ -243,7 +240,7 @@ body{
 	color: #ff153b;
 	font-style: normal;
 }
-.main dd .ticket span{
+.main li .ticket span{
 	background: url(../images/sprite.png) 0 -54px no-repeat;
 	padding: 0 42px 0 18px;
 	width: 56px;
@@ -260,7 +257,7 @@ body{
 	padding: 62px 0 63px 0;
 	width: 990px;
 }
-.farm .main dt{
+.farm .title{
 	background: url(../images/fram.jpg) no-repeat;
 	width: 481px;
 }
@@ -285,7 +282,7 @@ body{
 	padding: 60px 0 59px 0;
 	width: 990px;
 }
-.clear .main dt{
+.clear .title{
 	background: url(../images/clear.jpg) no-repeat;
 	width: 376px;
 }
@@ -310,7 +307,7 @@ body{
 	padding: 58px 0 72px 0;
 	width: 990px;
 }
-.babystore .main dt{
+.babystore .title{
 	background: url(../images/babystore.jpg) no-repeat;
 	width: 371px;
 }
@@ -323,23 +320,22 @@ body{
 	padding: 70px 0 91px 0;
 	width: 990px;
 }
-.babytoy .main dt{
+.babytoy .title{
 	background: url(../images/babytoy.jpg) no-repeat;
 	width: 370px;
 }
-.babytoy dd .mainbottom{
+.babytoy li .mainbottom{
 	margin-top: -4px;
 	height: 115px;
 }
-.babytoy dd .logo{
+.babytoy li .logo{
 	display: block;
-	background: url(../images/sprite.png) no-repeat 0 -254px;
 	margin: 0 auto;
 	padding-top: 1px;
 	width: 90px;
 	height: 45px;
 }
-.babytoy dd .storeInf{
+.babytoy li .storeInf{
 	display: block;
 	margin-bottom: 3px;
 	text-align: center;
@@ -348,7 +344,7 @@ body{
 	font-weight: bold;
 	color: #000;
 }
-.babytoy dd .ticket i{
+.babytoy li .ticket i{
 	background: url(../images/sprite.png) no-repeat 0 -83px;
 	margin-left: 9px;
 	border: 0 none;
@@ -357,7 +353,10 @@ body{
 	line-height: 35px;
 	height: 35px;
 }
-.babytoy dd .ticket em{
+.babytoy li .ticket{
+	height: 35px;
+}
+.babytoy li .ticket em{
 	background: url(../images/sprite.png) no-repeat 0px -118px;
 	border: 0 none;
 	padding-left: 22px;
@@ -376,15 +375,16 @@ body{
 	padding: 59px 0 131px 0;
 	width: 990px;
 }
-.food .main dt{
+.food .title{
 	background: url(../images/food.jpg) no-repeat;
 	width: 371px;
 }
 #rightNav{
 	background:#fff;
 	position: fixed;
+	margin-top: -180px;
 	width: 90px;
-	top: 150px;
+	top: 50%;
 	right: 0px;
 }
 #rightNav i{
